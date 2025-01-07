@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hotels | Stay & Dine</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hotel-card {
+            margin-bottom: 20px;
+            border: 1px solid #64412D;
+        }
+        .hotel-card img {
+            max-height: 200px;
+            object-fit: cover;
+            border: 1px solid #64412D;
+        }
+        footer 
+        {
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #ccc;
+            margin-top: auto;
+        }
+        .contact-info{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .contact-item
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .icon{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .footer-content{
+            text-align: left;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        .footer-section {
+            margin-left: 20px;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .social-media {
+             margin-bottom: 20px;
+        }
+
+        .social-media a img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        .social-login {
+            margin-top: 10px;
+        }
+
+        .social-login a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .social-login img {
+            width: 20px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .twitter-login {
+            background-color: transparent;
+        }
+        .google-login {
+            background-color: transparent;
+        }
+
+        .facebook-login {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body style="background-color: #E7E2DC;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#64412D;">
+            <a class="navbar-brand" href="#">Stay & Dine</a>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h2>Available Hotels</h2>
+        <div class="row">
+            <!-- hotel-1  -->
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="hotel-1.jpeg" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Oceanview Resort</h5>
+                        <p class="card-text">Perfect view for a relaxing coastal getaway.</p>
+                        <p><strong>Package:</strong></p>
+                        <ul>
+                            <li>Standard: $150/night (breakfast, beach access)</li>
+                            <li>Deluxe: $200/night (breakfast, beach access, spa treatment)</li>
+                            <li>Honeymoon: $300/night (breakfast, beach access, spa, romantic dinner)</li>
+                        </ul>
+                        <p><strong>Facilities:</strong> Infinity pool, spa, free breakfast. </p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- hotel-2  -->
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="hotel-2.jpeg" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Mountain Peak Lodge</h5>
+                        <p class="card-text">Ideal for nature lovers and adventure seekers. </p>
+                        <p><strong>Package:</strong></p>
+                        <ul>
+                            <li>Standard: $220/night (hiking, free breakfast)</li>
+                            <li>Adventure: $270/night (hiking, breakfast, guided mountain tour)</li>
+                            <li>Deluxe: $350/night (hiking, breakfast, private jacuzzi, dinner)</li>
+                        </ul>
+                        <p><strong>Facilities:</strong> Fireplace rooms, outdoor jacuzzi.</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- hotel-3  -->
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="hotel-3.jpeg" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">City Lights Hotel</h5>
+                        <p class="card-text">A modern urban stay with stunning skyline views.</p>
+                        <p><strong>Package:</strong></p>
+                        <ul>
+                            <li>Basic: $180/night (breakfast, free Wi-Fi)</li>
+                            <li>Business: $250/night (breakfast, free Wi-Fi, airport transfer) </li>
+                            <li>Executive: $320/night (breakfast, rooftop bar, private meeting room)</li>
+                        </ul>
+                        <p><strong>Facilities:</strong> Rooftop bar, gym, Wi-Fi.</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- hotel-4  -->
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="hotel-4.jpeg" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Riverside Retreat</h5>
+                        <p class="card-text">A tranquil escape by the river.                       
+                         </p>
+                        <p><strong>Package:</strong></p>
+                        <ul>
+                            <li>Basic: $130/night (free parking, breakfast)</li>
+                            <li>Outdoor Explorer: $180/night (kayak rentals, breakfast)</li>
+                            <li>Premium: $220/night (kayak rentals, breakfast, riverfront dining)</li>
+                        </ul>
+                        <p><strong>Facilities:</strong> Riverfront dining, kayak rentals.  
+                        </p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- hotel-5  -->
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="https://scontent.fbom5-1.fna.fbcdn.net/o1/v/t0/f1/m340/genai_m4_cln_lla_v3:upload_img_63710920_09_19_2024_05_38_05_341278_6680110173357090129.jpeg?_nc_ht=scontent.fbom5-1.fna.fbcdn.net&_nc_cat=105&ccb=9-4&oh=00_AYDa2auqq6zFDrkaYu-mlPR9--cd_Ujsre-vZIMH4UZczg&oe=66EDF18E&_nc_sid=5b3566" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Grand Hotel</h5>
+                        <p class="card-text">Luxurious stay with a view of the city skyline.</p>
+                        <p><strong>Package:</strong></p>
+                        <ul>
+                            <li>Standard: $350/night (breakfast, free Wi-Fi, butler)</li>
+                            <li>VIP: $450/night (breakfast, butler, private chauffeur)</li>
+                            <li>Ultimate: $600/night (butler, chauffeur, spa, private dinner)</li>
+                        </ul>
+                        <p><strong>Facilities:</strong> Indoor pool, fine dining. </p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- hotel-6  -->
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="hotel-6.jpeg" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Countryside Inn</h5>
+                        <p class="card-text">A cozy, budget-friendly rural retreat.</p>
+                        <p><strong>Package:</strong></p>
+                        <ul>
+                            <li>Budget: $90/night (free breakfast, Wi-Fi)</li>
+                            <li>Family: $120/night (breakfast, garden BBQ, pet-friendly)</li>
+                            <li>Deluxe: $150/night (breakfast, Wi-Fi, countryside tour)</li>
+                        </ul>
+                        <p><strong>Facilities:</strong> Pet-friendly, BBQ facilities.</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Sunshine</h5>
+                        <p class="card-text">Luxurious stay with a view of the city skyline.</p>
+                        <p><strong>Package:</strong> Deluxe Room</p>
+                        <p><strong>Price:</strong> $150/night</p>
+                        <p><strong>Facilities:</strong> Free WiFi, Pool, Gym</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Sunshine</h5>
+                        <p class="card-text">Luxurious stay with a view of the city skyline.</p>
+                        <p><strong>Package:</strong> Deluxe Room</p>
+                        <p><strong>Price:</strong> $150/night</p>
+                        <p><strong>Facilities:</strong> Free WiFi, Pool, Gym</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Sunshine</h5>
+                        <p class="card-text">Luxurious stay with a view of the city skyline.</p>
+                        <p><strong>Package:</strong> Deluxe Room</p>
+                        <p><strong>Price:</strong> $150/night</p>
+                        <p><strong>Facilities:</strong> Free WiFi, Pool, Gym</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Sunshine</h5>
+                        <p class="card-text">Luxurious stay with a view of the city skyline.</p>
+                        <p><strong>Package:</strong> Deluxe Room</p>
+                        <p><strong>Price:</strong> $150/night</p>
+                        <p><strong>Facilities:</strong> Free WiFi, Pool, Gym</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Sunshine</h5>
+                        <p class="card-text">Luxurious stay with a view of the city skyline.</p>
+                        <p><strong>Package:</strong> Deluxe Room</p>
+                        <p><strong>Price:</strong> $150/night</p>
+                        <p><strong>Facilities:</strong> Free WiFi, Pool, Gym</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card hotel-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Hotel Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Sunshine</h5>
+                        <p class="card-text">Luxurious stay with a view of the city skyline.</p>
+                        <p><strong>Package:</strong> Deluxe Room</p>
+                        <p><strong>Price:</strong> $150/night</p>
+                        <p><strong>Facilities:</strong> Free WiFi, Pool, Gym</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #64412D; color: white;">
+        <div class="contact-info">
+            <div class="contact item">
+                <div class="icon">&#128222;</div>
+                <p>+91 8847769281</p>
+            </div>
+            <div class="contact-item">
+                <div class="icon">&#9993;</div>
+                <p>aimanansari1010@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <div class="icon">&#128205;</div>
+                <p>Internatonal</p>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-secrion community">
+                <h4>Help Center</h4>
+                <ul class="list-unstyled">
+                    <li><a href="FAQ.html" class="text-white">FAQ</a></li>
+                    <li><a href="contact-us.html" class="text-white">Contact Us</a></li>
+                    <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section company">
+                <h4>Resources</h4>
+                <ul class="list-unstyled">
+                    <li><a href="about-us.html" class="text-white">About Us</a></li>
+                    <li><a href="terms-of-service.html" class="text-white">Terms of Service</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="footer-section resources">
+                <h4>Offers/Deals</h4>
+                <ul class="list-unstyled">
+                    <li><a href="offers.html" class="text-white">Offers</a></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-login">
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://www.twitter.com/" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://www.whatsapp.com/" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.google.com/" target="_blank">
+            <i class="fab fa-google"></i>
+        </a>
+        </div>
+        <div class="footer bottom">
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <p>&copy; 2024 Hotels & Restaurants. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
